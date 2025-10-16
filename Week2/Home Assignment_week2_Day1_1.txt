@@ -1,0 +1,22 @@
+Instructions:
+- Generate Selenium java scripts for redbus.in web application
+- Use selenium Webdriver 
+- Use TestNG as test runner
+- Add JavaDoc for methods & class. 
+- With locator strategy
+	-Use Id if it is unique
+	-Use name if it unique
+	- Use xapth without dynamic numbers in it
+	- Do not use css
+- [DO NOT] include explanation or testcode
+- Use Explicitwait only [No thread.sleep]
+-Generate plain java code without any POM 
+
+Context:
+- You are AI assistant as test automation expert
+- Project is webapplication to book tickets
+- You are AI assistant as expert in Selenium and Java
+
+Examples:
+Input DOM:
+<div class="searchWidget___282b3a undefined" data-autoid="searchWidget"><div class="mainContent___b916e4"><div class="inputsWrapper___4655bd"><div class="inputAndSwapWrapper___e7dc96"><div class="srcDestWrapper___e67e69" tabindex="0" role="button"><div class="placeHolderContainer___17236c"><i class="icon___be1a22 icon icon-boarding_point"></i><div class="labelCityWrapper___fd5744"><div class="label___57eda7 ">From</div><div class="srcDest___aa6db3"></div></div></div></div></div><div class="srcDestWrapper___e67e69" tabindex="0" role="button"><div class="placeHolderContainer___17236c"><i class="icon___be1a22 icon icon-dropping_point"></i><div class="labelCityWrapper___fd5744"><div class="label___57eda7 ">To</div><div class="srcDest___aa6db3"></div></div></div></div><div class="dateWrapper___fc9eaf"><div class="dateInputWrapper___c8345a" tabindex="0" role="button" aria-label="Select Date of Journey. Current date: 11 Oct, 2025" aria-expanded="false" aria-haspopup="dialog"><i class="icon___0039d4 icon icon-date_range"></i><div class="dojWrapper___1f3d15"><span class="dateLabel___a92fe6 selected___4b9e19">Date of Journey</span><span class="doj___e69938">11 Oct, 2025</span></div></div><div class="buttonsWrapper___eba03a"><div class="tonalWrap___357792 " style="--button-width:auto"><button class="tonalButton___ba650c " role="button" aria-label="Search for Today">Today</button></div><div class="tonalWrap___357792 " style="--button-width:auto"><button class="tonalButton___ba650c " role="button" aria-label="Search for Tomorrow">Tomorrow</button></div></div></div></div><div class="womenFunnelWrapper___22e69d"><div class="womenFunnelToggleContainer___910415"><div class="imageTextWrapper___f518aa" role="button" tabindex="0" aria-label="Booking for women, Know more"><img src="/rpwassets/public/images/female.svg" alt="" class="imageWrapper___2ff583" width="32" height="32"><div class="textWrapper___4c65e4"><div class="text___65a40a">Booking for women</div><div class="linkText___6aa381">Know more</div></div></div><div role="switch" aria-checked="false" aria-label="Booking for Women" tabindex="0"><label for="switch" class="switchLabel___a8ead2 unChecked___09ee04 enabled___ad293b "><input id="switch" type="checkbox" class="switchInput___50b81b" aria-label="" tabindex="-1"></label></div></div></div></div><button class="primaryButton___3262c2 searchButtonWrapper___90670b " style="--button-width:100%"><i class="icon___f1eb9d icon icon-search"></i>Search buses</button></div>
