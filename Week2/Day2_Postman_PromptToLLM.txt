@@ -1,0 +1,54 @@
+Request to create non functional testcases for google search functionality
+
+{
+  "model": "llama-3.3-70b-versatile",
+  "messages": [
+    {
+      "role": "user",
+      "content": "You are a manual tester and generate test cases for non functional. Create non functional testcases for google search functionality. Create 10 testcases which [SHOULD] include positive, negative and corner cases. Testcase should contain all the fields as per the best practise."
+    },
+    {
+      "role": "system",
+      "content": "Background is search functionality. You are an AI assistant as an expert in Manual testing with non functional background."
+    }
+  ],
+  "max_tokens": 500,
+  "temperature": 0.1
+}
+
+
+
+Response:
+
+{
+    "id": "chatcmpl-426f5c9d-6d62-4429-bc9a-8e138bbe517b",
+    "object": "chat.completion",
+    "created": 1760625472,
+    "model": "llama-3.3-70b-versatile",
+    "choices": [
+        {
+            "index": 0,
+            "message": {
+                "role": "assistant",
+                "content": "As a manual tester, I'll create non-functional test cases for Google search functionality. Here are 10 test cases that include positive, negative, and corner cases:\n\n**Test Case 1: Positive - Simple Search**\n* **Test Case ID:** GS-001\n* **Test Case Description:** Verify that Google search returns relevant results for a simple search query.\n* **Preconditions:** User has a stable internet connection and a compatible browser.\n* **Steps:**\n\t1. Open Google search page.\n\t2. Enter a simple search query (e.g., \"weather\").\n\t3. Click the \"Search\" button.\n* **Expected Result:** Relevant search results are displayed.\n* **Test Data:** Search query: \"weather\"\n\n**Test Case 2: Negative - Empty Search Query**\n* **Test Case ID:** GS-002\n* **Test Case Description:** Verify that Google search handles an empty search query.\n* **Preconditions:** User has a stable internet connection and a compatible browser.\n* **Steps:**\n\t1. Open Google search page.\n\t2. Click the \"Search\" button without entering a search query.\n* **Expected Result:** An error message or a prompt to enter a search query is displayed.\n* **Test Data:** None\n\n**Test Case 3: Corner Case - Special Characters**\n* **Test Case ID:** GS-003\n* **Test Case Description:** Verify that Google search handles special characters in the search query.\n* **Preconditions:** User has a stable internet connection and a compatible browser.\n* **Steps:**\n\t1. Open Google search page.\n\t2. Enter a search query with special characters (e.g., \"!@#$%^&*()\").\n\t3. Click the \"Search\" button.\n* **Expected Result:** Relevant search results are displayed or an error message is displayed if the search query is invalid.\n* **Test Data:** Search query: \"!@#$%^&*()\"\n\n**Test Case 4: Positive - Search with Quotes**\n* **Test Case ID:** GS-004\n* **Test Case Description:** Verify that Google search returns relevant results for a search query with quotes.\n* **Preconditions:** User has a stable internet connection and a compatible browser.\n* **Steps:**\n\t1. Open Google search page.\n\t2. Enter a search query with quotes (e.g., \"manual testing\").\n\t3. Click the \"Search\" button.\n* **Expected Result:** Relevant search results are displayed.\n* **Test Data:** Search query: \"manual testing\"\n\n**Test Case 5: Negative - Very Long Search Query**\n* **Test Case ID:** GS-005\n* **Test Case Description:** Verify that Google search handles a very long search query.\n* **Preconditions:** User has a stable internet connection and a compatible browser.\n* **Steps:**\n\t1. Open Google search page.\n\t2. Enter a very long search query (e.g., a paragraph of text).\n\t3. Click the \"Search\" button.\n* **Expected Result:** An error message or a prompt to shorten the search query is displayed.\n* **Test Data:** Search query: a paragraph of text\n\n**Test Case 6: Corner Case - Non-English Characters**\n* **Test Case ID:** GS-006\n* **Test Case Description:** Verify that Google search handles non-English characters in the search query.\n* **Preconditions:** User has a stable internet connection and a compatible browser.\n* **Steps:**\n\t1. Open Google search page.\n\t2. Enter a search query with non-English characters (e.g., \"Bonjour\").\n\t3. Click the \"Search\" button.\n* **Expected Result:** Relevant search results are displayed.\n* **Test Data:** Search query: \"Bonjour\"\n\n**Test Case 7: Positive - Search with Numbers**\n* **Test Case ID:** GS-007\n* **Test Case Description:** Verify that Google search returns relevant results for a search query with numbers.\n* **Preconditions:** User has a stable internet connection and a compatible browser.\n* **Steps:**\n\t1. Open Google search page.\n\t2. Enter a search query with numbers (e.g., \"2022\").\n\t3. Click the \"Search\" button.\n* **Expected Result:** Relevant search results are displayed.\n* **Test Data:** Search query: \"2022\"\n\n**Test Case 8: Negative - SQL Injection**\n* **Test Case ID:** GS-008\n* **Test Case Description:** Verify that Google search is secure against SQL injection attacks.\n* **Preconditions:** User has a stable internet connection and a compatible browser.\n* **Steps:**\n\t1. Open Google search page.\n\t2. Enter a search query with SQL injection code (e.g., \"SELECT * FROM users\").\n\t3. Click the \"Search\" button.\n* **Expected Result:** An error message or a prompt to enter a valid search query is displayed.\n* **Test Data:** Search query: \"SELECT * FROM users\"\n\n**Test Case 9: Corner Case - Search with Punctuation**\n* **Test Case ID:** GS-009\n* **Test Case Description:** Verify that Google search handles punctuation in the search query.\n* **Preconditions:** User has a stable internet connection and a compatible browser.\n* **Steps:**\n\t1. Open Google search page.\n\t2. Enter a search query with punctuation (e.g., \"hello, world!\").\n\t3. Click the \"Search\" button.\n* **Expected Result:** Relevant search results are displayed.\n* **Test Data:** Search query: \"hello, world!\"\n\n**Test Case 10: Positive - Search with Multiple Keywords**\n* **Test Case ID:** GS-010\n* **Test Case Description:** Verify that Google search returns relevant results for a search query with multiple keywords.\n* **Preconditions:** User has a stable internet connection and a compatible browser.\n* **Steps:**\n\t1. Open Google search page.\n\t2. Enter a search query with multiple keywords (e.g., \"manual testing tutorial\").\n\t3. Click the \"Search\" button.\n* **Expected Result:** Relevant search results are displayed.\n* **Test Data:** Search query: \"manual testing tutorial\"\n\nThese test cases cover various scenarios, including positive, negative, and corner cases, to ensure that the Google search functionality is thoroughly tested."
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ],
+    "usage": {
+        "queue_time": 0.206371881,
+        "prompt_tokens": 118,
+        "prompt_time": 0.005947751,
+        "completion_tokens": 1301,
+        "completion_time": 2.165367466,
+        "total_tokens": 1419,
+        "total_time": 2.171315217
+    },
+    "usage_breakdown": null,
+    "system_fingerprint": "fp_155ab82e98",
+    "x_groq": {
+        "id": "req_01k7pq9ar0engbf2yjsy979ph2"
+    },
+    "service_tier": "on_demand"
+}
