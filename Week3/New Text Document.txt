@@ -1,0 +1,16 @@
+Steps to install extension in chrome:
+
+01) Extract the zip (ai-extension)
+02) Open chrome and go to chrome://extensions/
+03) Turn ON - Developer mode
+04) Click Load unpacked button
+05) Select the ai-extension folder (from step 1)
+06) Confirm the extension (AI Code Generator) is loaded
+07) Click on extension icon on the browser and Click PIN
+08) Click the chrome extension
+09) Go to settings tab
+10) Choose Groq, one of the model
+11) Go to groq and get the API key and paste here
+12) Go to Code Generator tab
+13) Inspect one or more elements
+14) Confirm feature file / code is generated
