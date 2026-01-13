@@ -1,0 +1,37 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../../../../../../../Downloads/Redbus"
+		},
+		{
+			"path": "../../../../../../../../ai-extension/ai-extension"
+		},
+		{
+			"path": "../../../../../../../Week4/user-story-to-tests"
+		},
+		{
+			"path": "../../../../../../../Week4/leaftaps"
+		},
+		{
+			"path": "../../../../../../../Week4/training"
+		},
+		{
+			"path": "../../../../../../../Week4/ai-extension/ai-extension"
+		},
+		{
+			"path": "../../../../../../rag-demo-mongo-v3"
+		},
+		{
+			"path": "../../../.."
+		}
+	],
+	"settings": {
+		"java.project.sourcePaths": [
+			"src"
+		],
+		"java.project.outputPath": "bin",
+		"java.project.referencedLibraries": [
+			"lib/**/*.jar"
+		]
+	}
+}
